@@ -3,17 +3,6 @@
   padding: 0;
 }
 
-@keyframes bouncing {
-  0% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 20px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
 body {
   font-family: "Roboto", "Ubuntu", "Montserrat", "Arial", sans-serif;
 }
@@ -21,56 +10,62 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-color: #667D62;
 }
 
-.header-wrapper iframe {
+header iframe {
   background-size: cover;
 }
 
 .header-section {
   width: 100%;
-  background-color: #667D62;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.header-section ul {
+
+ul {
   display: none;
 }
-.header-section .languages {
+
+.languages {
   display: flex;
   cursor: pointer;
   margin: 22px 0 0 70px;
 }
-.header-section .languages .en,
-.header-section .languages .arrow-up {
+.languages .en,
+.languages .arrow-up {
   display: none;
 }
-.header-section .languages img {
+.languages img {
   margin: 2px 0 0px 10px;
   width: 15px;
   height: 15px;
 }
-.header-section .title-text {
+
+.title-text {
   text-align: center;
 }
-.header-section .title-text h2 {
+.title-text h2 {
   font-size: 15px;
 }
-.header-section .title-text img {
+.title-text img {
   width: 26vh;
   height: auto;
   margin: 10px 0;
 }
-.header-section .title-text hr {
+.title-text hr {
   width: 100%;
   margin: 5px 0;
 }
-.header-section .title-text h5 {
+.title-text h5 {
   font-size: 12px;
 }
-.header-section button {
+
+button {
   background-color: unset;
   color: #fff;
   border: 1px solid #fff;
@@ -81,15 +76,16 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.header-section button:hover {
+button:hover {
   background-color: #fff;
   color: #000;
 }
-.header-section .down-arrow-header {
+
+.down-arrow-header {
   text-align: center;
   position: relative;
 }
-.header-section .down-arrow-header img {
+.down-arrow-header img {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -101,6 +97,17 @@ header {
   position: absolute;
 }
 
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 .swiper {
   width: 100%;
   height: 100%;
@@ -193,9 +200,13 @@ section {
 }
 
 h2 {
+  font-family: "Pacifico", sans-serif;
   font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 5px 10px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -207,11 +218,11 @@ footer {
   background-color: #667D62;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 footer a {
   color: #fff;
   text-decoration: none;
-  text-align: center;
   font-size: 14px;
 }
 footer a:hover {
@@ -275,7 +286,7 @@ footer .logo-footer img {
   }
   .swiper {
     width: 100%;
-    height: 50vh;
+    height: 35vh;
   }
   .swiper-wrapper h2 {
     font-size: 16px;
@@ -292,7 +303,7 @@ footer .logo-footer img {
   .barbecue,
   .events {
     width: 100%;
-    height: 50vh;
+    height: 35vh;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after,
@@ -300,8 +311,13 @@ footer .logo-footer img {
   .swiper-rtl .swiper-button-next:after {
     font-size: 15px;
   }
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: 5px;
+    height: 5px;
+  }
   footer {
-    padding: 25px 0;
+    padding: 3px 0;
     display: block;
     text-align: center;
   }
@@ -309,6 +325,7 @@ footer .logo-footer img {
     width: 30px;
     height: 30px;
     margin-bottom: 28px;
+    opacity: 1;
   }
   footer a {
     font-size: 12px;
@@ -327,7 +344,4 @@ footer .logo-footer img {
     width: 20%;
     height: auto;
   }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
 }/*# sourceMappingURL=style.css.map */
