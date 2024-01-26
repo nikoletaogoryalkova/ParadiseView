@@ -15,7 +15,7 @@
   }
 }
 body {
-  font-family: "Ubuntu", "Roboto", "Montserrat", "Arial", sans-serif;
+  font-family: "Roboto", "Ubuntu", "Montserrat", "Arial", sans-serif;
 }
 
 header {
@@ -147,7 +147,7 @@ article {
   text-align: center;
 }
 article h3 {
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -208,10 +208,6 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-footer .logo-footer img {
-  width: 100px;
-  height: auto;
-}
 footer a {
   color: #fff;
   text-decoration: none;
@@ -240,4 +236,98 @@ footer .social-media a img {
 footer .social-media a img:hover {
   opacity: 1;
   transition: color 0.3s ease;
+}
+footer .logo-footer img {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  article {
+    padding: 35px 0;
+  }
+  article h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  article .text-center p {
+    font-size: 12px;
+  }
+  article .city {
+    font-size: 12px;
+    margin: 0 0 7px 0;
+  }
+  article p {
+    font-size: 12px;
+    padding: 3px 30px;
+    line-height: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .swiper {
+    width: 100%;
+    height: 50vh;
+  }
+  .swiper-wrapper h2 {
+    font-size: 16px;
+  }
+  .swiper-wrapper .text-center {
+    font-size: 12px;
+    margin: 0;
+    top: 70%;
+  }
+  .rooms,
+  .restaurant,
+  .spa,
+  .pool,
+  .barbecue,
+  .events {
+    width: 100%;
+    height: 50vh;
+  }
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    font-size: 15px;
+  }
+  footer {
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+  }
+  footer .social-media a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 28px;
+  }
+  footer a {
+    font-size: 12px;
+  }
+  footer a img {
+    width: 15px;
+    height: 15px;
+  }
+  footer .phone {
+    margin: 10px 0;
+  }
+  footer .logo-footer {
+    margin-top: 28px;
+  }
+  footer .logo-footer img {
+    width: 20%;
+    height: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
 }/*# sourceMappingURL=style.css.map */
