@@ -28,23 +28,123 @@ iframe:hover {
   transform: translate(-50%, -50%);
 }
 
-ul {
-  display: none;
+.left-header {
+  display: flex;
+}
+.left-header #burger-menu {
+  margin-left: 3em;
+}
+
+#burger-menu {
+  cursor: pointer;
+  height: 1.7em;
+  width: 1.7em;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: #fff;
+  display: block;
+  height: 4px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+
+#burger-menu span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 16px;
+}
+
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 20px;
+}
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+
+#burger-menu.close span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+#nav {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 73vh;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#nav li {
+  list-style: none;
+}
+#nav a {
+  color: #fff;
+  display: block;
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+#nav.overlay {
+  visibility: visible;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .languages {
-  display: flex;
   cursor: pointer;
-  margin: 10px 0 0 50px;
+  margin: 0 0 0 4em;
 }
 .languages a {
   text-decoration: none;
+}
+.languages span {
+  display: none;
   color: #fff;
 }
-.languages img {
-  margin: 2px 0 0px 10px;
-  width: 15px;
-  height: 15px;
+.languages span.selected {
+  display: block;
+}
+.languages span:hover {
+  transition: 0.6s ease-in-out;
+  border-bottom: 0.15rem solid #fff;
 }
 
 .title-text {
