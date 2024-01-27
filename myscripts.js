@@ -5,9 +5,7 @@ burgerMenu.addEventListener('click', function () {
   overlay.classList.toggle("overlay");
 });
 
-
+// Change Language
 $('.selected').on('click', function () {
   $('.language span').show('slow');
 });
-
-// Back to top

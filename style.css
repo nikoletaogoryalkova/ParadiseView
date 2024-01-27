@@ -478,7 +478,7 @@ footer .logo-footer img {
   }
   .swiper {
     width: 100%;
-    height: 35vh;
+    height: 50vh;
   }
   .swiper-wrapper h2 {
     font-size: 16px;
@@ -495,7 +495,7 @@ footer .logo-footer img {
   .barbecue,
   .events {
     width: 100%;
-    height: 35vh;
+    height: 50vh;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after,
@@ -625,7 +625,7 @@ footer .logo-footer img {
   }
   .swiper {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
   }
   .swiper-wrapper h2 {
     font-size: 16px;
@@ -642,7 +642,7 @@ footer .logo-footer img {
   .barbecue,
   .events {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after,
