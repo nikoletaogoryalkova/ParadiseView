@@ -37,9 +37,9 @@ ul {
   cursor: pointer;
   margin: 10px 0 0 50px;
 }
-.languages .en,
-.languages .arrow-up {
-  display: none;
+.languages a {
+  text-decoration: none;
+  color: #fff;
 }
 .languages img {
   margin: 2px 0 0px 10px;
@@ -202,7 +202,6 @@ section {
 }
 
 h2 {
-  font-family: "Pacifico", sans-serif;
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
