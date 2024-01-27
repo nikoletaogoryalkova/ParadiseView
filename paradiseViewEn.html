@@ -17,36 +17,38 @@
 </head>
 
 <body>
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow"></button>
     <header>
-        <iframe width="100%" height="770" id="video"
-            src=https://www.youtube.com/embed/naP_nUeg11Y?si&loop=1&autoplay=1&controls=0&autohide=1&mute=1&modestbranding=1&showinfo=0&fs=0&rel=0&wmode=transparent&playlist=naP_nUeg11Y&frameborder=0
-            title="Paradise View Video" frameborder="0" allow="accelerometer; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <section class="header-wrapper">
+            <iframe width="100%" height="770" id="video"
+                src=https://www.youtube.com/embed/naP_nUeg11Y?si&loop=1&autoplay=1&controls=0&autohide=1&mute=1&modestbranding=1&showinfo=0&fs=0&rel=0&wmode=transparent&playlist=naP_nUeg11Y&frameborder=0
+                title="Paradise View Video" frameborder="0" allow="accelerometer; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="header-section">
                 <div class="left-header">
-                <div id="burger-menu">
-                    <span></span>
+                    <div id="burger-menu">
+                        <span></span>
                     </div>
-                <div id="nav">
-                <ul>
-                    <li><a href="#introduction">About Us</a></li>
-                    <li><a href="#rooms">Rooms</a></li>
-                    <li><a href="#restaurant">Restaurant</a></li>
-                    <li><a href="#spa">Spa</a></li>
-                     <li><a href="#pool">Pools</a></li>
-                    <li><a href="#barbecue">Barbecue Area</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+                    <div id="nav">
+                        <ul>
+                            <li><a href="#introduction">About Us</a></li>
+                            <li><a href="#rooms">Rooms</a></li>
+                            <li><a href="#restaurant">Restaurant</a></li>
+                            <li><a href="#spa">Spa</a></li>
+                            <li><a href="#pool">Pools</a></li>
+                            <li><a href="#barbecue">Barbecue Area</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <label class="languages">
+                        <a href="paradiseView.html"><span class="bg selected">BG</span></a>
+                        <a href="paradiseViewEn.html"><span class="en">EN</span></a>
+                        <!--  <img class="arrow-down" src="img/down-arrow.svg" alt="arrow">-->
+                        <!--  <img class="arrow-up" src="img/up-arrow.svg" alt="arrow">-->
+                    </label>
                 </div>
-                <label class="languages">
-                    <a href="paradiseView.html"><span class="bg selected">BG</span></a>
-                    <a href="paradiseViewEn.html"><span class="en">EN</span></a>
-                  <!--  <img class="arrow-down" src="img/down-arrow.svg" alt="arrow">-->
-                  <!--  <img class="arrow-up" src="img/up-arrow.svg" alt="arrow">-->
-                </label>
-            </div>
                 <div class="title-text">
                     <h4>Holiday Village</h4>
                     <img src="img/ParadiseView.svg" alt="logo">
@@ -69,8 +71,8 @@
             <h1>Paradise View</h1>
             <p class="city">Sarnitsa</p>
             <p>Located in one of the most beautiful places in Bulgaria,
-                revealing an exceptional panoramic view of the city of Sarnitsa and the Dospat Dam.</p> 
-                <p>Paradise View Villa Village offers a heavenly place
+                revealing an exceptional panoramic view of the city of Sarnitsa and the Dospat dam.</p>
+            <p>Paradise View Villa Village offers a heavenly place
                 for quality relaxation and true pleasures for all the senses.</p>
         </article>
         <section class="rooms" id="rooms">
@@ -120,10 +122,10 @@
         </section>
         <article>
             <h3>Restaurant</h3>
-            <p>Enjoy an unforgettable culinary journey. The restaurant offers a la carte menu and 
+            <p>Enjoy an unforgettable culinary journey. The restaurant offers a la carte menu and
                 plenty of irresistible offers for every taste.</p>
             <p> The restaurant has an indoor lounge and an outdoor terrace,
-                revealing the great natural view of the Dospat Dam.</p>
+                revealing the great natural view of the Dospat dam.</p>
         </article>
         <section class="spa" id="spa">
             <div class="swiper mySwiper">
@@ -144,7 +146,7 @@
         <article>
             <h3>Spa</h3>
             <p>The SPA has two jacuzzis, a steam bath, a sauna, an ice bucket,
-                and an outdoor terrace with an amazing view of the city of Sarnitsa and the Dospat Dam.
+                and an outdoor terrace with an amazing view of the city of Sarnitsa and the Dospat dam.
             </p>
         </article>
         <section class="pool" id="pool">
@@ -165,7 +167,7 @@
             <article>
                 <h3>Pools</h3>
                 <p> The pool of Paradise View literally merges us with the beauty of nature,
-                    thanks to the splendid view of the city of Sarnitsa and the Dospat Dam. </p>
+                    thanks to the splendid view of the city of Sarnitsa and the Dospat dam. </p>
                 <p> The complex also has a children's pool and specially designated relaxing areas.
                     All pools are heated. </p>
             </article>
@@ -258,7 +260,28 @@
             },
 
         });
+
+        // Back to top
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
+
 </body>
 
 </html>
