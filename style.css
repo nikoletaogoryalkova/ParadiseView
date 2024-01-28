@@ -7,6 +7,14 @@ body {
   font-family: "Ubuntu", "Roboto", "Montserrat", "Arial", sans-serif;
 }
 
+#desktop-video {
+  display: block;
+}
+
+#mobile-video {
+  display: none;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -394,9 +402,11 @@ footer .logo-footer img {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  iframe {
-    width: 100%;
-    height: 100vh;
+  #desktop-video {
+    display: none;
+  }
+  #mobile-video {
+    display: block;
   }
   #myBtn {
     right: 15px;

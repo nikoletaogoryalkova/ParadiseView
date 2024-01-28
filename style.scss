@@ -7,6 +7,14 @@ body {
     font-family: 'Ubuntu', 'Roboto', 'Montserrat', 'Arial', sans-serif;
 }
 
+#desktop-video {
+    display: block;
+}
+
+#mobile-video {
+    display: none;
+}
+
 header {
     width: 100%;
     height: auto;
@@ -208,9 +216,11 @@ button {
         color: #000;
     }
 }
+
 #video {
     pointer-events: none;
 }
+
 .down-arrow-header {
     text-align: center;
     position: relative;
@@ -445,9 +455,11 @@ footer {
 //Mobile View
 
 @media (min-width: 320px) and (max-width: 480px) {
-    iframe {
-        width: 100%;
-        height: 100vh;
+    #desktop-video {
+        display: none;
+    }
+    #mobile-video {
+        display: block;
     }
 
     #myBtn {
@@ -794,4 +806,3 @@ footer {
         height: 5px;
     }
 }
-

@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <!-- Back to top button -->
@@ -23,16 +23,18 @@
     <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
     <header>
         <section class="header-wrapper">
-            <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-                <iframe  id="video" allow="fullscreen;autoplay" allowfullscreen height="100%"
-                    src="https://streamable.com/e/m39hov?autoplay=1&muted=1&nocontrols=1" width="100%"
-                    style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+            <div id="desktop-video" style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%"
+                    src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1" width="100%"
+                    style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
                 </iframe>
             </div>
-            <!--     <iframe width="100%" height="770" id="video"
-                src=https://www.youtube.com/embed/naP_nUeg11Y?si&loop=1&autoplay=1&controls=0&autohide=1&mute=1&modestbranding=1&showinfo=0&fs=0&rel=0&wmode=transparent&playlist=naP_nUeg11Y&frameborder=0
-                title="Paradise View Video" frameborder="0" allow="accelerometer; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+            <div id="mobile-video" style="position:relative; width:100%; height:0px; padding-bottom:178.218%">
+                <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%" 
+                src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1" 
+                width="100%" style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+            </iframe>
+        </div>
             <div class="header-section">
                 <div class="left-header">
                     <div id="burger-menu">
@@ -286,7 +288,7 @@
             document.documentElement.scrollTop = 0;
         }
 
-        
+  
     </script>
 </body>
 
