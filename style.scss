@@ -208,7 +208,9 @@ button {
         color: #000;
     }
 }
-
+#video {
+    pointer-events: none;
+}
 .down-arrow-header {
     text-align: center;
     position: relative;
@@ -245,7 +247,7 @@ button {
 
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .swiper-slide {
@@ -349,10 +351,10 @@ section {
 
 h2 {
     //font-family: 'Sunflor craft', sans-serif;
-    font-size: 28px;
+    font-size: 2.7em;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -599,6 +601,7 @@ footer {
     }
 
 
+
     footer {
         padding: 1em 0 0 0.3em;
         display: block;
@@ -791,3 +794,4 @@ footer {
         height: 5px;
     }
 }
+

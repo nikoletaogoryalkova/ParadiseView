@@ -21,10 +21,16 @@
     <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
     <header>
         <section class="header-wrapper">
-            <iframe width="100%" height="770" id="video"
+            <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                <iframe id="video" allow="fullscreen;autoplay" allowfullscreen height="100%" 
+                src="https://streamable.com/e/m39hov?autoplay=1&muted=1&nocontrols=1" 
+                width="100%" style="border:none; width:100%; height:100%; position:absolute; 
+                left:0px; top:0px; overflow:hidden;">
+                </iframe></div>
+       <!--     <iframe width="100%" height="770" id="video"
                 src=https://www.youtube.com/embed/naP_nUeg11Y?si&loop=1&autoplay=1&controls=0&autohide=1&mute=1&modestbranding=1&showinfo=0&fs=0&rel=0&wmode=transparent&playlist=naP_nUeg11Y&frameborder=0
                 title="Paradise View Video" frameborder="0" allow="accelerometer; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
             <div class="header-section">
                 <div class="left-header">
                     <div id="burger-menu">
@@ -235,7 +241,7 @@
             </footer>
     </main>
 
-    <script src="myscripts.js"> </script>
+    <script src="myScripts.js"> </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
