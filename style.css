@@ -106,10 +106,16 @@ iframe:hover {
   width: 0;
 }
 
+.line-header {
+  min-width: 100%;
+  min-height: 10vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 #nav {
   z-index: 1;
   min-width: 100%;
-  min-height: 77vh;
+  min-height: 75vh;
   position: fixed;
   top: 0;
   height: 0;
@@ -231,7 +237,7 @@ button:hover {
 }
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .swiper-slide {
@@ -310,7 +316,7 @@ section {
   background-repeat: no-repeat;
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .text-center {
@@ -328,7 +334,7 @@ section {
 }
 
 h2 {
-  font-size: 2.7em;
+  font-size: 2em;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   padding: 10px 15px;
@@ -412,19 +418,27 @@ footer .logo-footer img {
     right: 15px;
   }
   #myBtn .arrow-up {
-    width: 2em;
+    width: 1.6em;
+    height: 1em;
   }
   .header-section {
-    top: 2em;
+    top: 3.3em;
+    left: 50%;
   }
   .left-header #burger-menu {
-    margin-left: 0.3em;
+    margin: 0.2em 0 0 0;
   }
   #burger-menu span {
-    width: 0.5em;
+    width: 18px;
+  }
+  #burger-menu span:before {
+    width: 10px;
+  }
+  #burger-menu span:after {
+    width: 14px;
   }
   #nav {
-    min-height: 33vh;
+    min-height: 37vh;
   }
   #nav a {
     font-size: 16px;
@@ -434,17 +448,20 @@ footer .logo-footer img {
     margin-top: 1em;
   }
   .languages {
-    margin-left: 1.7em;
+    margin: 0.5em 0 0 1.5em;
   }
   .languages span {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .title-text {
+    margin-left: 1em;
   }
   .title-text h4 {
-    font-size: 8px;
+    font-size: 14px;
   }
   .title-text img {
-    width: 8vh;
-    margin: 0;
+    width: 18vh;
+    margin-top: 0.1em;
   }
   .title-text hr {
     margin: 0;
@@ -452,17 +469,17 @@ footer .logo-footer img {
   }
   .title-text h5 {
     margin-top: 2px;
-    font-size: 5px;
+    font-size: 10px;
   }
   button {
-    margin: 0;
-    margin-right: 1em;
-    padding: 6px;
-    font-size: 8px;
+    margin: 0.5em 1em 0 0;
+    padding: 1em 0.5em;
+    font-size: 14px;
   }
   .down-arrow-header img {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    left: 55%;
   }
   h1 {
     font-size: 18px;
@@ -556,14 +573,20 @@ footer .logo-footer img {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  #desktop-video {
+    display: none;
+  }
+  #mobile-video {
+    display: block;
+  }
   #myBtn {
     right: 10px;
   }
   #myBtn .arrow-up {
-    width: 0.9em;
+    width: 1.5em;
   }
   .header-section {
-    top: 4em;
+    top: 3em;
   }
   .left-header #burger-menu {
     margin-left: 0;
@@ -582,7 +605,7 @@ footer .logo-footer img {
     margin-top: 2em;
   }
   .languages {
-    margin-left: 1.6em;
+    margin: 0.5em 0 0 1.6em;
   }
   .languages span {
     font-size: 12px;
@@ -602,9 +625,8 @@ footer .logo-footer img {
     font-size: 8px;
   }
   button {
-    margin: 0;
-    margin-right: 2em;
-    padding: 8px;
+    margin: 0 1em 0 0;
+    padding: 1em 0.5em;
     font-size: 12px;
   }
   .down-arrow-header img {
@@ -639,10 +661,10 @@ footer .logo-footer img {
   }
   .swiper {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .swiper-wrapper h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .swiper-wrapper .text-center {
     font-size: 12px;
@@ -656,7 +678,7 @@ footer .logo-footer img {
   .barbecue,
   .events {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after,
@@ -668,5 +690,96 @@ footer .logo-footer img {
   .swiper-pagination-bullet-active {
     width: 5px;
     height: 5px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-section {
+    top: 7%;
+  }
+  .left-header #burger-menu {
+    margin-left: 1em;
+  }
+  #nav {
+    min-height: 96vh;
+  }
+  #nav a {
+    font-size: 20px;
+    margin: 0.5em;
+  }
+  #nav ul {
+    margin-top: 2.5em;
+  }
+  .languages {
+    margin-top: 0.3em;
+  }
+  .title-text img {
+    width: 20vh;
+  }
+  .title-text h5 {
+    font-size: 10px;
+  }
+  button {
+    margin: 0 1em 0 0;
+    padding: 0.7em 0.5em;
+    font-size: 14px;
+  }
+  #myBtn {
+    right: 10px;
+  }
+  #myBtn .arrow-up {
+    width: 1.3em;
+  }
+  article {
+    padding: 30px 0;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  article .city {
+    font-size: 14px;
+    margin: 0;
+  }
+  article p {
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0 1em;
+  }
+  article h3 {
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .swiper {
+    height: 60vh;
+  }
+  .rooms,
+  .restaurant,
+  .spa,
+  .pool,
+  .barbecue,
+  .events {
+    width: 100%;
+    height: 60vh;
+  }
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    font-size: 1em;
+  }
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: 5px;
+    height: 5px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  footer a {
+    font-size: 12px;
+  }
+  footer .text-footer {
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
