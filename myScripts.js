@@ -15,14 +15,12 @@ burgerMenu.addEventListener('click', function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
-
-document.querySelectorAll("#nav ul li a").forEach(item => {
+// Closed Burger menu after selected 
+document.querySelectorAll("#nav ul li").forEach(item => {
   item.addEventListener('click', ()=>{
-  // Toggle Nav
-  nav.classList.add('nav-active');
-  // Close Nav
-  nav.classList.remove('nav-active');
-});
+    burgerMenu.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+  });
 });
 
 

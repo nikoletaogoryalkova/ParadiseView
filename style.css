@@ -39,6 +39,7 @@ iframe:hover {
   top: 0;
   padding: 1em 0;
   background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
 }
 .sticky .title-text h4,
 .sticky .title-text h5,
@@ -181,11 +182,11 @@ iframe:hover {
   text-align: center;
 }
 .title-text h2 {
-  font-size: 15px;
+  font-size: 16px;
 }
 .title-text img {
   width: 26vh;
-  height: auto;
+  margin-bottom: 0.2em;
 }
 .title-text hr {
   border: none;
@@ -344,7 +345,7 @@ section {
 
 h2 {
   font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   padding: 10px 15px;
   position: absolute;
@@ -463,10 +464,10 @@ footer .logo-footer img {
   }
   .title-text img {
     width: 18vh;
+    margin-bottom: 0.1em;
   }
   .title-text hr {
     border-top: 0.1em solid #fff;
-    margin-bottom: 0.2em;
   }
   .title-text h5 {
     font-size: 9px;
@@ -737,7 +738,7 @@ footer .logo-footer img {
     font-size: 14px;
   }
   .title-text img {
-    width: 20vh;
+    width: 35vh;
   }
   .title-text h5 {
     font-size: 10px;

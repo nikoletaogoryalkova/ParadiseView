@@ -39,6 +39,7 @@ iframe:hover {
     top: 0;
     padding: 1em 0;
     background: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
 
     .title-text h4,
     .title-text h5,
@@ -197,12 +198,12 @@ iframe:hover {
     text-align: center;
 
     h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     img {
         width: 26vh;
-        height: auto;
+        margin-bottom: 0.2em;
     }
 
     hr {
@@ -379,7 +380,7 @@ section {
 h2 {
     //font-family: 'Sunflor craft', sans-serif;
     font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 3px;
     padding: 10px 15px;
     position: absolute;
@@ -534,11 +535,12 @@ footer {
 
         img {
             width: 18vh;
+            margin-bottom: 0.1em;
         }
 
         hr {
             border-top: 0.1em solid #fff;
-            margin-bottom: 0.2em;
+           
         }
 
         h5 {
@@ -895,7 +897,7 @@ footer {
     }
 
     .title-text img {
-        width: 20vh;
+        width: 35vh;
     }
 
     .title-text h5 {
