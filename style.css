@@ -30,10 +30,16 @@ iframe:hover {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  position: absolute;
-  top: 9%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 2;
+  top: 2%;
+}
+
+.sticky {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .left-header {
@@ -238,6 +244,7 @@ button:hover {
 .swiper {
   width: 100%;
   height: 90vh;
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -473,8 +480,8 @@ footer .logo-footer img {
   }
   button {
     margin: 0.5em 1em 0 0;
-    padding: 1em 0.5em;
-    font-size: 14px;
+    padding: 0.6em 0.4em;
+    font-size: 12px;
   }
   .down-arrow-header img {
     width: 1.5em;
@@ -693,8 +700,14 @@ footer .logo-footer img {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  #desktop-video {
+    display: block;
+  }
+  #mobile-video {
+    display: none;
+  }
   .header-section {
-    top: 7%;
+    top: 15%;
   }
   .left-header #burger-menu {
     margin-left: 1em;
@@ -712,8 +725,11 @@ footer .logo-footer img {
   .languages {
     margin-top: 0.3em;
   }
+  h4 {
+    font-size: 14px;
+  }
   .title-text img {
-    width: 20vh;
+    width: 40vh;
   }
   .title-text h5 {
     font-size: 10px;
@@ -748,10 +764,10 @@ footer .logo-footer img {
     padding-bottom: 10px;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .swiper {
-    height: 60vh;
+    height: 80vh;
   }
   .rooms,
   .restaurant,
@@ -760,7 +776,7 @@ footer .logo-footer img {
   .barbecue,
   .events {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after,
