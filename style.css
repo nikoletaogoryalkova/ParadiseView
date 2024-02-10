@@ -719,7 +719,7 @@ footer .logo-footer img {
     margin-left: 1em;
   }
   #nav {
-    min-height: 10095vh;
+    min-height: 100vh;
   }
   #nav a {
     font-size: 20px;
@@ -738,7 +738,7 @@ footer .logo-footer img {
     font-size: 14px;
   }
   .title-text img {
-    width: 35vh;
+    width: 40vh;
   }
   .title-text h5 {
     font-size: 10px;

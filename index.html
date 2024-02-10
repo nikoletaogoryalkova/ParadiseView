@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,74 +12,78 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <!-- Back to top button -->
 </head>
 
 <body>
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
     <header>
-        <section class="header-wrapper">
-            <div id="desktop-video" style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-                <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%"
-                    src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1" width="100%"
-                    style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+        <section>
+                <div id="desktop-video" style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+                    <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%"
+                        src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1" width="100%"
+                        style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
+                    </iframe>
+                </div>
+                <div id="mobile-video" style="position:relative; width:100%; height:0px; padding-bottom:178.218%">
+                    <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%" 
+                    src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1" 
+                    width="100%" style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
                 </iframe>
             </div>
-            <div id="mobile-video" style="position:relative; width:100%; height:0px; padding-bottom:178.218%">
-                <iframe id="video"  allow="fullscreen;autoplay" allowfullscreen height="100%" 
-                src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1" 
-                width="100%" style="border:none;  width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;">
-            </iframe>
-        </div>
-            <div class="header-section">
-                <div class="left-header">
-                    <div id="burger-menu">
-                        <span></span>
+            <div  class="header-wrapper">
+                <div class="header-section">
+                    <div class="left-header">
+                        <nav id="burger-menu">
+                            <span></span>
+                        </nav>
+                        <div id="nav">
+                            <ul>
+                                <li><a href="#introduction">За нас</a></li>
+                                <li><a href="#rooms">Стаи</a></li>
+                                <li><a href="#restaurant">Ресторант</a></li>
+                                <li><a href="#spa">Спа</a></li>
+                                <li><a href="#pool">Басейни</a></li>
+                                <li><a href="#barbecue">Барбекю Зона</a></li>
+                                <li><a href="#events">Събития</a></li>
+                                <li><a href="#contacts">Контакти</a></li>
+                            </ul>
+                        </div>
+                        <label class="languages">
+                            <a href="paradiseView.html"><span class="bg">BG</span></a>
+                            <a href="paradiseViewEn.html"><span class="en selected">EN</span></a>
+                        </label>
                     </div>
-                    <div id="nav">
-                        <ul>
-                            <li><a href="#introduction">About Us</a></li>
-                            <li><a href="#rooms">Rooms</a></li>
-                            <li><a href="#restaurant">Restaurant</a></li>
-                            <li><a href="#spa">Spa</a></li>
-                            <li><a href="#pool">Pools</a></li>
-                            <li><a href="#barbecue">Barbecue Area</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
+                    <div class="title-text">
+                        <h4>Вилно селище</h4>
+                        <a href="/"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
+                        <hr />
+                        <h5>СЪРНИЦА</h5>
                     </div>
-                    <label class="languages">
-                        <a href="index.html"><span class="bg selected">BG</span></a>
-                        <a href="paradiseViewEn.html"><span class="en">EN</span></a>
-                    </label>
-                </div>
-                <div class="title-text">
-                    <h4>Villa Village</h4>
-                    <a href="/"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
-                    <hr />
-                    <h5>SARNITSA</h5>
-                </div>
-                <div class="button">
-                    <a href="tel:+359894384057"><button type="button">BOOK</button></a>
+                    <div class="button">
+                        <a href="tel:+359894384057"><button type="button">Резервирай</button></a>
+                    </div>
                 </div>
             </div>
-
             <div class="down-arrow-header bounce">
                 <img src="img/down-arrow.svg" alt="arrow-down">
             </div>
+                
         </section>
 
     </header>
     <main>
         <article class="introduction" id="introduction">
             <h1>Paradise View</h1>
-            <p class="city">Sarnitsa</p>
-            <p>Located in one of the most beautiful places in Bulgaria,
-                revealing an exceptional panoramic view of the city of Sarnitsa and the Dospat dam.</p>
-            <p>Paradise View Villa Village offers a heavenly place
-                for quality relaxation and true pleasures for all the senses.</p>
+            <p class="city">Сърница</p>
+            <p>Разположено на едно от най-красивите места в България
+                и разкриващо изключителна панорамна гледка към град Сърница и язовир Доспат.</p>
+            <p>Вилно селище Paradise View предлага на своите посетители райско място за
+                качествен отдих и удоволствия за всички сетива.</p>
         </article>
         <section class="rooms" id="rooms">
             <!-- Swiper -->
@@ -93,20 +97,21 @@
                     <div class="swiper-slide"><img src="img/room-6.jpg" alt="room"></div>
                     <div class="swiper-slide"><img src="img/room-7.jpeg" alt="room"></div>
                     <div class="swiper-slide"><img src="img/room-8.jpg" alt="room"></div>
-                    <h2>Rooms</h2>
+                    <h2>Стаи</h2>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
+
             </div>
         </section>
         <article>
-            <h3>Rooms</h3>
-            <p>Choose from the varied accommodation options at Paradise View, including villas
-                and a hotel part with double rooms, apartments and studios.</p>
-            <p>The villas have 4 double rooms each, equipped with a private bathroom.
-                Two of the villas have a bathtub in each of the rooms.
-                The complex also has a children's playground and free parking.</p>
+            <h3>Стаи</h3>
+            <p>Изберете от прекрасните и разнообразни възможности за настаняване,
+                включващи вилна зона и хотелска част с двойни стаи, апартаменти и студиа.</p>
+            <p>Вилите разполагат с по 4 двойни стаи, снабдени със собствен санитарен възел.
+                Две от вилите разполагат с вана във всяка една от стаите.
+                Комплексът е с детски кът и безплатен паркинг.</p>
         </article>
         <section class="restaurant" id="restaurant">
             <div class="swiper mySwiper">
@@ -117,20 +122,19 @@
                     <div class="swiper-slide"><img src="img/restaurant-5.jpg" alt="mekitsi"></div>
                     <div class="swiper-slide"><img src="img/restaurant-6.jpg" alt="beef"></div>
                     <div class="swiper-slide"><img src="img/restaurant-7.jpg" alt="banitsa"></div>
-                    <h2>Restaurant</h2>
+                    <h2>Ресторант</h2>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
             </div>
-
         </section>
         <article>
-            <h3>Restaurant</h3>
-            <p>Enjoy an unforgettable culinary journey. The restaurant offers a la carte menu and
-                plenty of irresistible offers for every taste.</p>
-            <p>The restaurant has an indoor lounge and an outdoor terrace,
-                revealing the great natural view of the Dospat dam.</p>
+            <h3>Ресторант</h3>
+            <p>Насладете се на незабравимо кулинарно пътешествие. Ресторантът предлага на своите гости меню на
+                свободна консумация и изобилие от неустоими предложения за всеки вкус.</p>
+            <p>Ресторантът разполага с вътрешен салон и с външна тераса,
+                разкриваща прекрасната природна гледка към язовир Доспат.</p>
         </article>
         <section class="spa" id="spa">
             <div class="swiper mySwiper">
@@ -140,18 +144,17 @@
                     <div class="swiper-slide"><img src="img/spa-2.jpg" alt="spa"></div>
                     <div class="swiper-slide"><img src="img/spa-4.jpg" alt="spa"></div>
                     <div class="swiper-slide"><img src="img/spa-5.jpg" alt="spa"></div>
-                    <h2>Spa</h2>
+                    <h2>Спа</h2>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
-
             </div>
         </section>
         <article>
-            <h3>Spa</h3>
-            <p>The SPA has two jacuzzis, a steam bath, a sauna, an ice bucket,
-                and an outdoor terrace with an amazing view of the city of Sarnitsa and the Dospat dam.</p>
+            <h3>Спа</h3>
+            <p>В Спа зоната са разположени две джакузита, сауна, ледено ведро, парна баня,
+                външна тераса с изумителна гледка към град Сърница и язовир Доспат.</p>
         </article>
         <section class="pool" id="pool">
             <div class="swiper mySwiper">
@@ -162,18 +165,18 @@
                     <div class="swiper-slide"><img src="img/pool-4.JPG" alt="pool"></div>
                     <div class="swiper-slide"><img src="img/pool-5.jpg" alt="pool"></div>
                     <div class="swiper-slide"><img src="img/pool-6.jpg" alt="relax-area"></div>
-                    <h2>Pools</h2>
+                    <h2>Басейни</h2>
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
             </div>
             <article>
-                <h3>Pools</h3>
-                <p>The pool of Paradise View literally merges us with the beauty of nature,
-                    thanks to the splendid view of the city of Sarnitsa and the Dospat dam.</p>
-                <p>The complex also has a children's pool and specially designated relaxing areas.
-                    All pools are heated. </p>
+                <h3>Басейни</h3>
+                <p>Басейнът на Paradise View буквално ни слива с красотата на природата,
+                    благодарение на прекрасната гледка.</p>
+                <p>Комплексът разполага и с детски басейн, както и със специално
+                    обособени зони за отдих. Всички басейни са отопляеми.</p>
             </article>
             <section class="barbecue" id="barbecue">
                 <div class="swiper mySwiper">
@@ -183,7 +186,7 @@
                         <div class="swiper-slide"><img src="img/barbecue-2.jpg" alt="barbecue"></div>
                         <div class="swiper-slide"><img src="img/barbecue-3.JPG" alt="children-playing-in-the-garden">
                         </div>
-                        <h2>Barbecue Area</h2>
+                        <h2>Барбекю</h2>
                     </div>
                     <div class="swiper-button-next swiper-navBtn"></div>
                     <div class="swiper-button-prev swiper-navBtn"></div>
@@ -191,10 +194,10 @@
                 </div>
             </section>
             <article>
-                <h3>Barbecue Area</h3>
-                <p>Be one with nature! Paradise View Villa Village offers a free BBQ area,</p>
-                <p>where visitors have the pleasure of preparing their food while enjoying the freshness
-                    and beauty of the city of Sarnitsa.</p>
+                <h3>Барбекю Зона</h3>
+                <p>Бъдете едно с природата! Вилно селище Paradise View предлага свободна барбекю зона,</p>
+                <p>където посетителите имат удоволствието сами да приготвят храната си,
+                    докато се наслаждават на свежестта и красотата на град Сърница.</p>
             </article>
             <section class="events" id="events">
                 <div class="swiper mySwiper">
@@ -202,7 +205,7 @@
                         <div class="swiper-slide"><img src="img/event-1.jpeg" alt="event-room"></div>
                         <div class="swiper-slide"><img src="img/event-2.jpeg" alt="event-room"></div>
                         <div class="swiper-slide"><img src="img/event-3.jpg" alt="event-room"></div>
-                        <h2>Events</h2>
+                        <h2>Събития</h2>
                     </div>
                     <div class="swiper-button-next swiper-navBtn"></div>
                     <div class="swiper-button-prev swiper-navBtn"></div>
@@ -210,11 +213,11 @@
                 </div>
             </section>
             <article>
-                <h3>Events</h3>
-                <p>Immerse yourself in festive coziness and an authentic atmosphere.
-                    Paradise View Tavern has a capacity of 100 people</p>
-                <p>and provides the opportunity to organize meetings, holidays, and company events.
-                    The tavern has a plasma and a projector.</p>
+                <h3>Събития</h3>
+                <p>Потопете се в празничен уют и автентична атмосфера.
+                    Механата на Paradise View е с капацитет от 100 души</p>
+                <p>и предоставя възможност за организиране на срещи, празници и фирмени събития.
+                    Механата разполага с плазма и проектор.</p>
             </article>
             <footer id="contacts">
                 <div class="social-media">
@@ -225,7 +228,7 @@
                 </div>
                 <div class="text-footer">
                     <div class="email">
-                        <a href="mailto:paradise_view@abv.bg"><img src="img/mail.svg" alt="е-mail-icon">
+                        <a href="mailto:paradise_view@abv.bg"><img src="img/mail.svg" alt="e-mail-icon">
                             paradise_view@abv.bg</a>
                     </div>
                     <div class="phone">
@@ -234,7 +237,7 @@
                     </div>
                     <a href="https://maps.app.goo.gl/vuwuJhAPVTnv9Gg1A">
                         <img src="img/location.svg" alt="location-icon">
-                        Sarnitsa - Pazardzhik, Bulgaria</a>
+                        Сърница - Пазарджик, България</a>
                 </div>
                 <div class="logo-footer">
                     <a href="/"><img src="img/logo-white-bold.png" alt="logo"></a>
@@ -285,6 +288,8 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        
     </script>
 </body>
 
