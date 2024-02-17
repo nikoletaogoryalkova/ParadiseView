@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -444,7 +445,7 @@ footer .logo-footer img {
     width: 14px;
   }
   #nav {
-    min-height: 40vh;
+    min-height: 50vh;
   }
   #nav a {
     font-size: 16px;
@@ -480,7 +481,7 @@ footer .logo-footer img {
   .down-arrow-header img {
     width: 1.7em;
     height: 1.5em;
-    left: 50%;
+    left: 53%;
   }
   h1 {
     font-size: 18px;
