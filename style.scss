@@ -3,7 +3,6 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Ubuntu', 'Roboto', 'Montserrat', 'Arial', sans-serif;
 }
@@ -482,6 +481,9 @@ footer {
 
     #myBtn {
         right: 15px;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
 
         .arrow-up {
             width: 2.6em;
@@ -698,6 +700,9 @@ footer {
 
     #myBtn {
         right: 10px;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
 
         .arrow-up {
             width: 1.9em;
@@ -924,7 +929,9 @@ footer {
 
     #myBtn {
         right: 10px;
-
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
         .arrow-up {
             width: 1.3em;
         }

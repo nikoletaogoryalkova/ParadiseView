@@ -428,6 +428,9 @@ footer .logo-footer img {
   #myBtn {
     right: 15px;
   }
+  #myBtn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   #myBtn .arrow-up {
     width: 2.6em;
     height: 2em;
@@ -589,6 +592,9 @@ footer .logo-footer img {
   }
   #myBtn {
     right: 10px;
+  }
+  #myBtn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
   }
   #myBtn .arrow-up {
     width: 1.9em;
@@ -763,6 +769,9 @@ footer .logo-footer img {
   }
   #myBtn {
     right: 10px;
+  }
+  #myBtn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
   }
   #myBtn .arrow-up {
     width: 1.3em;
