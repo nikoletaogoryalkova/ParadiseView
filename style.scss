@@ -665,7 +665,9 @@ footer {
 
         a {
             font-size: 12px;
-
+            &:hover {
+                text-decoration: none;
+            }
             img {
                 width: 15px;
                 height: 15px;
@@ -862,6 +864,9 @@ footer {
 
         .text-footer a {
             font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
         }
 
         .logo-footer img {
@@ -1000,6 +1005,9 @@ footer {
 
         a {
             font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
         }
 
         .text-footer {

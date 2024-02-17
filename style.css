@@ -568,6 +568,9 @@ footer .logo-footer img {
   footer a {
     font-size: 12px;
   }
+  footer a:hover {
+    text-decoration: none;
+  }
   footer a img {
     width: 15px;
     height: 15px;
@@ -719,6 +722,9 @@ footer .logo-footer img {
   footer .text-footer a {
     font-size: 12px;
   }
+  footer .text-footer a:hover {
+    text-decoration: none;
+  }
   footer .logo-footer img {
     width: 5em;
   }
@@ -828,6 +834,9 @@ footer .logo-footer img {
   }
   footer a {
     font-size: 12px;
+  }
+  footer a:hover {
+    text-decoration: none;
   }
   footer .text-footer {
     margin-top: 5px;
