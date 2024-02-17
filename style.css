@@ -21,6 +21,10 @@ header {
   height: auto;
 }
 
+iframe {
+  pointer-events: none;
+}
+
 iframe:hover {
   pointer-events: none;
   transition: all 0s;
@@ -212,10 +216,6 @@ button {
 button:hover {
   background-color: #fff;
   color: #000;
-}
-
-#video {
-  pointer-events: none;
 }
 
 .down-arrow-header {
@@ -478,6 +478,10 @@ footer .logo-footer img {
     padding: 0.6em 0.4em;
     font-size: 12px;
   }
+  button:hover {
+    background-color: unset;
+    color: #fff;
+  }
   .down-arrow-header img {
     width: 1.7em;
     height: 1.5em;
@@ -630,6 +634,10 @@ footer .logo-footer img {
     padding: 1em 0.5em;
     font-size: 12px;
   }
+  button:hover {
+    background-color: unset;
+    color: #fff;
+  }
   .down-arrow-header img {
     width: 1.5em;
     height: 1.5em;
@@ -748,6 +756,10 @@ footer .logo-footer img {
     margin: 0 1em 0 0;
     padding: 0.7em 0.5em;
     font-size: 14px;
+  }
+  button:hover {
+    background-color: unset;
+    color: #fff;
   }
   #myBtn {
     right: 10px;

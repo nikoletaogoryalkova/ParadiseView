@@ -21,6 +21,9 @@ header {
     height: auto;
 }
 
+iframe {
+    pointer-events: none;
+}
 iframe:hover {
     pointer-events: none;
     transition: all 0s;
@@ -233,10 +236,6 @@ button {
         background-color: #fff;
         color: #000;
     }
-}
-
-#video {
-    pointer-events: none;
 }
 
 .down-arrow-header {
@@ -553,6 +552,10 @@ footer {
         margin: 0 0.7em 0 0;
         padding: 0.6em 0.4em;
         font-size: 12px;
+        &:hover {
+            background-color: unset;
+            color: #fff;
+        }
     }
 
     .down-arrow-header img {
@@ -755,6 +758,10 @@ footer {
         margin: 0 1.5em 0 0;
         padding: 1em 0.5em;
         font-size: 12px;
+        &:hover {
+            background-color: unset;
+            color: #fff;
+        }
     }
 
     .down-arrow-header img {
@@ -909,6 +916,10 @@ footer {
         margin: 0 1em 0 0;
         padding: 0.7em 0.5em;
         font-size: 14px;
+        &:hover {
+            background-color: unset;
+            color: #fff;
+        }
     }
 
     #myBtn {
