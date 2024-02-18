@@ -218,6 +218,11 @@ button:hover {
   color: #000;
 }
 
+button a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .down-arrow-header {
   text-align: center;
   position: relative;
