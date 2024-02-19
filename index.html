@@ -10,75 +10,76 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet prefetch'>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss"> 
     <!-- Back to top button -->
 </head>
 
 <body>
-    <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
     <header id="header">
         <section>
             <div id="desktop-video">
                 <iframe allow="fullscreen autoplay allowfullscreen"
-                    src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1">
-                </iframe>
-            </div>
-            <div id="mobile-video">
-                <iframe allow="fullscreen autoplay allowfullscreen"
-                    src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1">
-                </iframe>
-            </div>
-            <div class="header-wrapper">
-                <div class="header-section">
-                    <div class="left-header">
-                        <nav id="burger-menu">
-                            <span></span>
-                        </nav>
-                        <div id="nav">
-                            <ul>
-                                <li><a href="#introduction">За нас</a></li>
-                                <li><a href="#rooms">Стаи</a></li>
-                                <li><a href="#restaurant">Ресторант</a></li>
-                                <li><a href="#spa">Спа</a></li>
-                                <li><a href="#pool">Басейни</a></li>
-                                <li><a href="#barbecue">Барбекю Зона</a></li>
-                                <li><a href="#events">Събития</a></li>
-                                <li><a href="#contacts">Контакти</a></li>
-                            </ul>
-                        </div>
-                        <label class="languages">
-                            <a href="index.html" rel="canonical"><span class="bg">BG</span></a>
-                            <a href="indexEn.html"><span class="en selected">EN</span></a>
-                        </label>
-                    </div>
-                    <div class="title-text">
-                        <h4>Вилно селище</h4>
-                        <a href="#header"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
-                        <hr />
-                        <h5>СЪРНИЦА</h5>
-                    </div>
-                    <div class="button">
-                        <a href="tel:+359894384057">Резервирай</a>
-                    </div>
+                src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1">
+            </iframe>
+        </div>
+        <div id="mobile-video">
+            <iframe allow="fullscreen autoplay allowfullscreen"
+            src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1">
+        </iframe>
+    </div>
+    <div class="header-wrapper">
+        <div class="header-section">
+            <div class="left-header">
+                <nav id="burger-menu">
+                    <span></span>
+                </nav>
+                <div id="nav">
+                    <ul>
+                        <li><a href="#introduction">За нас</a></li>
+                        <li><a href="#rooms">Стаи</a></li>
+                        <li><a href="#restaurant">Ресторант</a></li>
+                        <li><a href="#spa">Спа</a></li>
+                        <li><a href="#pool">Басейни</a></li>
+                        <li><a href="#barbecue">Барбекю Зона</a></li>
+                        <li><a href="#events">Събития</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
+                    </ul>
                 </div>
+                <label class="languages">
+                    <a href="index.html" rel="canonical"><span class="bg">BG</span></a>
+                    <a href="indexEn.html"><span class="en selected">EN</span></a>
+                </label>
             </div>
-            <div class="down-arrow-header bounce">
-                <img src="img/down-arrow.svg" alt="arrow-down">
+            <div class="title-text">
+                <h4>Вилно селище</h4>
+                <a href="#header"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
+                <hr />
+                <h5>СЪРНИЦА</h5>
             </div>
-        </section>
-    </header>
+            <div class="button">
+                <a href="tel:+359894384057">Резервирай</a>
+            </div>
+        </div>
+    </div>
+    <div class="down-arrow-header bounce">
+        <img src="img/down-arrow.svg" alt="arrow-down">
+    </div>
+</section>
+</header>
 
-    <main>
+<main>
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
         <article class="introduction" id="introduction">
             <h1>Paradise View</h1>
             <p class="city">Сърница</p>

@@ -10,73 +10,74 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet prefetch'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet prefetch'>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss"> 
 </head>
 
 <body>
-    <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
     <header id="header">
         <section class="header-wrapper">
             <div id="desktop-video">
                 <iframe allow="fullscreen autoplay allowfullscreen"
-                    src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1">
-                </iframe>
+                src="https://streamable.com/e/1407ox?autoplay=1&muted=1&nocontrols=1">
+            </iframe>
+        </div>
+        <div id="mobile-video">
+            <iframe allow="fullscreen autoplay allowfullscreen"
+            src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1">
+        </iframe>
+    </div>
+    <div class="header-section">
+        <div class="left-header">
+            <div id="burger-menu">
+                <span></span>
             </div>
-            <div id="mobile-video">
-                <iframe allow="fullscreen autoplay allowfullscreen"
-                    src="https://streamable.com/e/amynyp?autoplay=1&muted=1&nocontrols=1">
-                </iframe>
+            <div id="nav">
+                <ul>
+                    <li><a href="#introduction">About Us</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#restaurant">Restaurant</a></li>
+                    <li><a href="#spa">Spa</a></li>
+                    <li><a href="#pool">Pools</a></li>
+                    <li><a href="#barbecue">Barbecue Area</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
             </div>
-            <div class="header-section">
-                <div class="left-header">
-                    <div id="burger-menu">
-                        <span></span>
-                    </div>
-                    <div id="nav">
-                        <ul>
-                            <li><a href="#introduction">About Us</a></li>
-                            <li><a href="#rooms">Rooms</a></li>
-                            <li><a href="#restaurant">Restaurant</a></li>
-                            <li><a href="#spa">Spa</a></li>
-                            <li><a href="#pool">Pools</a></li>
-                            <li><a href="#barbecue">Barbecue Area</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <label class="languages">
-                        <a href="index.html"><span class="bg selected">BG</span></a>
-                        <a href="indexEn.html" rel="canonical"><span class="en">EN</span></a>
-                    </label>
-                </div>
-                <div class="title-text">
-                    <h4>Villa Village</h4>
-                    <a href="#header"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
-                    <hr />
-                    <h5>SARNITSA</h5>
-                </div>
-                <div class="button">
-                    <a href="tel:+359894384057">BOOK</a>
-                </div>
-            </div>
+            <label class="languages">
+                <a href="index.html"><span class="bg selected">BG</span></a>
+                <a href="indexEn.html" rel="canonical"><span class="en">EN</span></a>
+            </label>
+        </div>
+        <div class="title-text">
+            <h4>Villa Village</h4>
+            <a href="#header"><img src="img/ParadiseViewLogo.svg" alt="logo"></a>
+            <hr />
+            <h5>SARNITSA</h5>
+        </div>
+        <div class="button">
+            <a href="tel:+359894384057">BOOK</a>
+        </div>
+    </div>
+    
+    <div class="down-arrow-header bounce">
+        <img src="img/down-arrow.svg" alt="arrow-down">
+    </div>
+</section>
+</header>
 
-            <div class="down-arrow-header bounce">
-                <img src="img/down-arrow.svg" alt="arrow-down">
-            </div>
-        </section>
-    </header>
-
-    <main>
+<main>
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="myBtn"><img class="arrow-up" src="img/up-arrow.svg" alt="arrow-up"></button>
         <article class="introduction" id="introduction">
             <h1>Paradise View</h1>
             <p class="city">Sarnitsa</p>
