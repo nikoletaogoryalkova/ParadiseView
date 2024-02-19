@@ -10,6 +10,10 @@ body {
 
 #desktop-video {
   display: block;
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56.25%;
 }
 
 #mobile-video {
@@ -23,6 +27,15 @@ header {
 
 iframe {
   pointer-events: none;
+  height: 100%;
+  width: 100%;
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
 }
 
 iframe:hover {
@@ -429,6 +442,10 @@ footer .logo-footer img {
   }
   #mobile-video {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 178.218%;
   }
   #myBtn {
     right: 15px;
@@ -597,6 +614,10 @@ footer .logo-footer img {
   }
   #mobile-video {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 178.218%;
   }
   #myBtn {
     right: 10px;
@@ -737,6 +758,10 @@ footer .logo-footer img {
 @media (min-width: 768px) and (max-width: 992px) {
   #desktop-video {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56.25%;
   }
   #mobile-video {
     display: none;

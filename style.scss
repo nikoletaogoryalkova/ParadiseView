@@ -10,6 +10,10 @@ body {
 
 #desktop-video {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56.250%;
 }
 
 #mobile-video {
@@ -23,6 +27,15 @@ header {
 
 iframe {
     pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
 }
 
 iframe:hover {
@@ -484,6 +497,10 @@ footer {
 
     #mobile-video {
         display: block;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        padding-bottom: 178.218%
     }
 
     #myBtn {
@@ -709,6 +726,10 @@ footer {
 
     #mobile-video {
         display: block;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        padding-bottom: 178.218%
     }
 
     #myBtn {
@@ -893,6 +914,10 @@ footer {
 @media (min-width: 768px) and (max-width: 992px) {
     #desktop-video {
         display: block;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        padding-bottom: 56.250%;
     }
 
     #mobile-video {
