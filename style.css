@@ -37,7 +37,6 @@ iframe {
   top: 0px;
   overflow: hidden;
 }
-
 iframe:hover {
   pointer-events: none;
   transition: all 0s;
@@ -215,9 +214,8 @@ iframe:hover {
   margin-top: 0.5em;
 }
 
-button {
+.button a {
   background-color: unset;
-  color: #fff;
   border: 1px solid #fff;
   padding: 15px;
   margin: 0 1em 0 0;
@@ -225,15 +223,13 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-button a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
+}
+.button a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .down-arrow-header {
@@ -429,7 +425,8 @@ footer .logo-footer img {
   border-radius: 2px;
 }
 #myBtn .arrow-up {
-  width: 1.3em;
+  width: 1.5em;
+  padding: 10px;
 }
 
 #myBtn:hover {
@@ -454,8 +451,7 @@ footer .logo-footer img {
     background-color: rgba(0, 0, 0, 0.6);
   }
   #myBtn .arrow-up {
-    width: 2.6em;
-    height: 2em;
+    width: 1.6em;
   }
   .left-header #burger-menu {
     margin: 0;
@@ -470,7 +466,7 @@ footer .logo-footer img {
     width: 14px;
   }
   #nav {
-    min-height: 50vh;
+    min-height: 45vh;
   }
   #nav a {
     font-size: 16px;
@@ -498,12 +494,12 @@ footer .logo-footer img {
   .title-text h5 {
     font-size: 9px;
   }
-  button {
+  .button a {
     margin: 0 0.7em 0 0;
     padding: 0.6em 0.4em;
     font-size: 12px;
   }
-  button:hover {
+  .button a:hover {
     background-color: unset;
     color: #fff;
   }
@@ -664,12 +660,12 @@ footer .logo-footer img {
     margin-top: 2px;
     font-size: 8px;
   }
-  button {
+  .button a {
     margin: 0 1.5em 0 0;
     padding: 1em 0.5em;
     font-size: 12px;
   }
-  button:hover {
+  .button a:hover {
     background-color: unset;
     color: #fff;
   }
@@ -789,17 +785,17 @@ footer .logo-footer img {
     font-size: 14px;
   }
   .title-text img {
-    width: 40vh;
+    width: 16vh;
   }
   .title-text h5 {
     font-size: 10px;
   }
-  button {
+  .button a {
     margin: 0 1em 0 0;
     padding: 0.7em 0.5em;
     font-size: 14px;
   }
-  button:hover {
+  .button a:hover {
     background-color: unset;
     color: #fff;
   }
@@ -810,7 +806,7 @@ footer .logo-footer img {
     background-color: rgba(0, 0, 0, 0.6);
   }
   #myBtn .arrow-up {
-    width: 1.3em;
+    width: 1.7em;
   }
   article {
     padding: 30px 0;
