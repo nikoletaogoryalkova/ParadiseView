@@ -8,6 +8,50 @@ body {
     font-family: 'Ubuntu', 'Roboto', 'Montserrat', 'Arial', sans-serif;
 }
 
+//Cookies
+// #cookies-banner {
+//     position: fixed;
+//     z-index: 999;
+//     bottom: 0;
+//     left: 0;
+//     min-width: 100%;
+//     background: rgba(0, 0, 0, 0.9);
+//     transition: all 0.3s ease-in-out;
+//     color: #fff;
+//     padding: 15px;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     p {
+//         padding: 15px;
+//     }
+
+//     button {
+//         background-color: unset;
+//         border: 1px solid #fff;
+//         padding: 10px;
+//         border-radius: 2px;
+//         font-size: 16px;
+//         cursor: pointer;
+//         color: #fff;
+//         display: inline-block;
+//         margin: 0 0 0 0.3em;
+//         &:hover {
+//             background-color: #fff;
+//             color: #000;
+//             transition: all 0.3s ease;
+//         }
+//     }
+    // .accept {
+    //     background-color: #fff;
+    //     color: #000;
+    //     &:hover {
+    //         background: rgba(255, 255, 255, 0.9);
+    //         transition: all 0.3s ease;
+    //     }
+    // }
+// }
+
 #desktop-video {
     display: block;
     position: relative;
@@ -23,6 +67,7 @@ body {
 header {
     width: 100%;
     height: auto;
+   
 }
 
 iframe {
@@ -208,6 +253,7 @@ iframe {
         &.selected {
             display: block;
         }
+
         &:hover {
             transition: all 0.3s ease-in-out;
             color: #fff;
@@ -291,8 +337,6 @@ iframe {
         bottom: 0;
     }
 }
-
-
 
 .swiper {
     width: 100%;
@@ -494,6 +538,20 @@ footer {
 
 //Mobile View
 @media (min-width: 320px) and (max-width: 480px) {
+    // #cookies-banner {
+    //    min-width: auto;
+    //    display: block;
+    //     p {
+    //         font-size: 12px;
+    //     }
+    //     button {
+    //         font-size: 12px;
+    //         padding: 0.6em 0.4em;
+    //         &:hover{
+    //             background-color: inherit;
+    //         }
+    //     }
+    // }
     #desktop-video {
         display: none;
     }
@@ -552,8 +610,16 @@ footer {
     .languages {
         margin: 0.5em 0 0 1em;
 
+        a:hover {
+            text-decoration: none;
+        }
+
         span {
             font-size: 14px;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
@@ -772,8 +838,16 @@ footer {
     .languages {
         margin: 0.5em 0 0 1.6em;
 
+        a:hover {
+            text-decoration: none;
+        }
+
         span {
             font-size: 12px;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
@@ -946,8 +1020,16 @@ footer {
     .languages {
         margin: 0.5em 0 0 1.5em;
 
-        a span {
+        a:hover {
+            text-decoration: none;
+        }
+
+        span {
             font-size: 12px;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 

@@ -484,8 +484,14 @@ footer .logo-footer img {
   .languages {
     margin: 0.5em 0 0 1em;
   }
+  .languages a:hover {
+    text-decoration: none;
+  }
   .languages span {
     font-size: 14px;
+  }
+  .languages span:hover {
+    text-decoration: none;
   }
   .title-text h4 {
     font-size: 12px;
@@ -650,8 +656,14 @@ footer .logo-footer img {
   .languages {
     margin: 0.5em 0 0 1.6em;
   }
+  .languages a:hover {
+    text-decoration: none;
+  }
   .languages span {
     font-size: 12px;
+  }
+  .languages span:hover {
+    text-decoration: none;
   }
   .title-text h4 {
     font-size: 14px;
@@ -784,8 +796,14 @@ footer .logo-footer img {
   .languages {
     margin: 0.5em 0 0 1.5em;
   }
-  .languages a span {
+  .languages a:hover {
+    text-decoration: none;
+  }
+  .languages span {
     font-size: 12px;
+  }
+  .languages span:hover {
+    text-decoration: none;
   }
   h4 {
     font-size: 14px;
