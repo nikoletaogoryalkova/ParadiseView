@@ -183,6 +183,11 @@ iframe:hover {
 .languages a {
   text-decoration: none;
 }
+.languages a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: underline;
+}
 .languages span {
   display: none;
   color: #fff;
@@ -191,8 +196,9 @@ iframe:hover {
   display: block;
 }
 .languages span:hover {
-  transition: 0.6s ease-in-out;
-  border-bottom: 0.15rem solid #fff;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .title-text {
